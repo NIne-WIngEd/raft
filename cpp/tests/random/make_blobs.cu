@@ -293,16 +293,24 @@ void check_cluster_std_by_label()
 }
 
 TEST(MakeBlobsClusterStd, FloatRowMajor)
-{ check_cluster_std_by_label<float, raft::layout_c_contiguous>(); }
+{
+  check_cluster_std_by_label<float, raft::layout_c_contiguous>();
+}
 
 TEST(MakeBlobsClusterStd, FloatColMajor)
-{ check_cluster_std_by_label<float, raft::layout_f_contiguous>(); }
+{
+  check_cluster_std_by_label<float, raft::layout_f_contiguous>();
+}
 
 TEST(MakeBlobsClusterStd, DoubleRowMajor)
-{ check_cluster_std_by_label<double, raft::layout_c_contiguous>(); }
+{
+  check_cluster_std_by_label<double, raft::layout_c_contiguous>();
+}
 
 TEST(MakeBlobsClusterStd, DoubleColMajor)
-{ check_cluster_std_by_label<double, raft::layout_f_contiguous>(); }
+{
+  check_cluster_std_by_label<double, raft::layout_f_contiguous>();
+}
 
 }  // end namespace random
 }  // end namespace raft
